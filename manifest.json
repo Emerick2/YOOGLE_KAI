@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "YOOGLE KAI",
+  "version": "1.0",
+  "description": "Une extension pour capturer des yo-kai dans Google !",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "assets/google.png",
+    "48": "assets/google.png",
+    "128": "assets/google.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/google.png",
+        "yo-kai/*",
+        "vide.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
