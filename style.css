@@ -1,5 +1,5 @@
 .image {
-    width: 300px;
+    height: 300px;
     cursor: pointer;
     transition: transform 0.3s ease;
     object-fit: cover;
@@ -9,7 +9,6 @@
 }
 .captured { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
 .captured img {
-    width: 150px;
     height: 150px;
 }
 .h1 {
@@ -135,6 +134,37 @@ body::before {
 }.carré6{
     position: absolute;
     width: 150px; 
+    height: 150px;
+    top: 390px;
+    right: 200px;
+}
+.carré1²{
+    position: absolute;
+    height: 150px;
+    top: 10px;
+    right: 10px;
+}.carré2²{
+    position: absolute;
+    height: 150px;
+    top: 10px;
+    right: 200px;
+}.carré3²{
+    position: absolute;
+    height: 150px;
+    top: 200px;
+    right: 10px;
+}.carré4²{
+    position: absolute;
+    height: 150px;
+    top: 200px;
+    right: 200px;
+}.carré5²{
+    position: absolute;
+    height: 150px;
+    top: 390px;
+    right: 10px;
+}.carré6²{
+    position: absolute;
     height: 150px;
     top: 390px;
     right: 200px;
