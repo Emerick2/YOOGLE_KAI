@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "YOOGLE KAI",
   "version": "1.0",
-  "description": "Une extension pour capturer des yo-kai dans Google !",
+  "description": "Une extension pour capturer des yo-kai !",
   "permissions": [
     "activeTab",
     "tabs"
@@ -22,7 +22,7 @@
     {
       "resources": [
         "assets/google.png",
-        "yo-kai/*",
+        "normal/*",
         "vide.png"
       ],
       "matches": ["<all_urls>"]
