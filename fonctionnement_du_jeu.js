@@ -241,4 +241,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   valeur = Math.floor(Math.random() * phrase.length);
   document.getElementById("phraseDeProfesseurTonneau").innerText = phrase[valeur];
+
+  
+  function ajouterEffetRebond(element) {
+    if (!element) return;
+    element.classList.remove("bounce"); // pour pouvoir relancer l'anim
+    void element.offsetWidth;           // force un "reflow" du navigateur
+    element.classList.add("bounce");
+  }
+  document.querySelectorAll("img").forEach(img => {
+    img.addEventListener("click", () => {
+      ajouterEffetRebond(img);
+    });
+  });
 });
